@@ -1,0 +1,150 @@
+
+.btn{ 
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 145px; 
+  max-width: 100%;
+  padding: 14px 15px;
+  border: none;
+  background: $color2;
+  background: linear-gradient(to bottom, #FED683 0%, #EAAF33 100%);    
+  border-radius: 10px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  white-space: normal;
+  outline: none!important;
+  position: relative;
+  font-family: $btn-font; 
+  text-decoration: none!important;
+  color: $btn-color;
+  cursor: pointer;
+  -webkit-appearance: none;
+  letter-spacing: 0.2px;
+  transition: transform 0.24s, background-color 0.24s, color 0.24s, border-color 0.24s, opacity 0.24s, box-shadow 0.24s;
+
+  &.btn-2{
+    background: #656D7B;
+  }
+
+  &.btn-block{ 
+    width: 100%;
+  }
+
+  &.btn-bordered{
+    box-shadow: none;
+    background: none;
+    border: 1px solid $borders;
+    font-size: 12px;
+    color: #99A3BC;
+
+    &:focus{
+      background: none;
+      color: $text-accent;
+      border-color: $borders;
+    }
+
+    &:hover{
+      color: $color2;
+      border: 1px solid $color2;
+      transform: none;
+      box-shadow: none;
+    }
+
+    &:active, &.active{ 
+      background: $color;
+      color: $bg;
+      transform: none;
+      box-shadow: none;
+    }
+
+    &.btn-confirm{
+      color: #FFF;
+      border-color: $color;
+      background: transparent;
+      
+      &:hover{
+        color: $color;
+        border: 1px solid $color;
+      }
+    }
+  }  
+
+  &.btn-cancel{
+    color: #FFF;
+    border-color: #EE4444;
+    background: #EE4444; 
+
+    &:hover, &:active, &:focus{
+      color: #FFF;
+      border-color: #EE4444;
+      background: #EE4444; 
+      transform: none; 
+      box-shadow: none;
+      box-shadow: 0 15px 35px -16px rgba(0,0,0,.9);
+      transform: translateY(-1px) translateZ(0);
+    }
+
+    &:hover{
+      box-shadow: 0 15px 35px -16px rgba(0,0,0,.9);
+      transform: translateY(-1px) translateZ(0);
+    }
+
+    &:active{
+      box-shadow: 0 12px 30px -18px rgba(0,0,0,.9), inset 0 10px 20px rgba(0,0,0,0.2);
+      transform: translateY(1px) translateZ(0);
+    }
+  }
+
+  &:focus{
+    background-color: darken($btn-bg, 5%);
+    color: $btn-color;
+    box-shadow: none;
+  }
+
+  &:active, &:hover{ 
+    color: $btn-color;
+    box-shadow: 0 15px 35px -16px rgba(0,0,0,.9);
+    transform: translateY(-1px) translateZ(0);
+  }
+
+  &:active{
+    box-shadow: 0 12px 30px -18px rgba(0,0,0,.9), inset 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(1px) translateZ(0);
+  } 
+  
+  &.disabled, &:disabled{
+    opacity: 0.5;
+  }
+}
+
+
+@media screen and ( max-width: $breakpoints-xl ){
+  .btn{
+  }
+}
+
+@media screen and ( max-width: $breakpoints-lg ){
+  .btn{
+
+  }
+}
+
+@media screen and ( max-width: $breakpoints-md ){
+  .btn{
+
+  }
+}
+
+@media screen and ( max-width: $breakpoints-sm ){
+  .btn{
+
+  }
+}
+
+@media screen and ( max-width: $breakpoints-xs ){
+  .btn{
+
+  }
+}

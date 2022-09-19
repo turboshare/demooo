@@ -1,0 +1,95 @@
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: -80px;
+	z-index: 10000;
+	display: none;
+
+	&-opened{
+		overflow: hidden;
+	}
+
+	&-close{
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: #ccc;
+    cursor: pointer;
+    position: absolute;
+    z-index: 401;    
+    padding: 10px;
+    top: 24px;
+    right: 40px;
+    opacity: 0.47;
+    transition: opacity 0.24s;
+    width: 44px;
+    height: 44px;
+
+    svg {
+	    display: block;
+	    height: 100%;
+	    overflow: visible;
+	    position: relative;
+	    width: 100%;
+	    fill: #A2001D;
+		}
+
+		&:hover{
+			opacity: 1;
+		}
+
+	}
+
+	&-backdrop{
+
+    background: #000000;
+    bottom: -40px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition-duration: 366ms;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(.47,0,.74,.71);
+
+    .modal-opened &{
+    	transition-timing-function: cubic-bezier(.22,.61,.36,1);
+	    opacity: 0.6;
+	  }
+	}
+
+	&-double-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	}
+}
+
+@media screen and ( max-width: $breakpoints-xl ){
+	.modal{
+	
+	}	
+}
+@media screen and ( max-width: $breakpoints-lg ){
+	.modal{
+	
+	}
+}
+@media screen and ( max-width: $breakpoints-md ){
+	.modal{
+	
+	}
+}
+@media screen and ( max-width: $breakpoints-sm ){
+	.modal{
+	
+	}
+}
+@media screen and ( max-width: $breakpoints-xs ){
+	.modal{
+		
+	}
+}

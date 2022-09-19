@@ -1,0 +1,74 @@
+//Variables
+
+$color: #F7C765;
+$color2: #DF9906;
+$color3: #DF9906;
+$color4: #51A17E;
+
+$grad1_begin: #FDD37E;
+$grad1_end: #E7A927;
+ 
+$grad2_begin: #2F4883; 
+$grad2_end: #6883C6;
+
+
+
+@function rems($size) {
+	// uncomment net line to see all sizes in px
+	@return $size;
+  //$remSize: $size / 16px; 
+  //@return #{$remSize}rem; 
+}
+ 
+$card-shadow: 16px 12px 100px 0px rgba(203, 203, 203, 0.004);
+
+$bg: #1D2637;
+
+
+$light: #b7b7b7;
+
+$font: "Avenir", Arial, sans-serif; 
+$headings-font: "Avenir", Arial, sans-serif; 
+
+$text-color: #DEDEDE;
+$headings: #262626;
+$borders: #111927;
+$entryborders: #1C242F;
+$gray: #545454; 
+$carets: #787878;
+$placeholder: #FFF;
+$capt: #b0b0b0;
+$input-bg: rgba(0,0,0,0.13);
+$label: #595959;
+
+$text-accent: #D3D3D3;
+ 
+$gray-text: #808080;
+$dark-gray-text: #292929;
+$page-content-text: #333333;
+
+
+$btn-bg: $color; 
+$btn-color: #FFF;
+$btn-size: 12px;
+$btn-font: $font;
+
+$font-size: 14;
+$font-size-small: 12px;
+$font-size-large: 20px;
+
+
+$error: #ee0000;
+$error-bg: #FFFFFF;
+$success: #6FCF97;
+
+
+$breakpoints-xxs: 0;
+$breakpoints-xs: 576px;
+$breakpoints-s : 640px;
+$breakpoints-sm: 768px;
+$breakpoints-md: 1024px;
+$breakpoints-lg: 1200px;
+$breakpoints-xl: 1600px;
+
+

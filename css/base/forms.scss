@@ -1,0 +1,149 @@
+.form-row, .form-group, .input-wrap{
+  position: relative;
+  margin-bottom: rems(11px);
+
+ label{ 
+    color: $label;
+    font-weight: normal;
+    font-size: $font-size-small;
+    margin-bottom: rems(4px);
+    display: inline-block;
+    cursor: text;
+    padding: 0;
+    transition: color 0.24s;
+  }
+}
+
+.form-control, 
+.input-text,
+.jq-selectbox__select-text, 
+.jq-checkbox, 
+.jq-radio,
+.jq-file{
+  background-color: $input-bg;
+  border: 1px solid $entryborders;
+  color: $headings;
+  box-shadow: none;
+  max-width: 100%;
+  width: 100%;
+  transition: background-color 0.24s, border-color 0.24s, color 0.24s, box-shadow 0.24s;
+  font-size: $font-size-small; 
+  padding: rems(17px) rems(34px);
+  line-height: rems(22px);
+  height: auto;
+  outline: none;
+  border-radius: rems(30px); 
+  font-size: rems(12px);
+  font-weight: 600;
+
+  &::placeholder{
+    color: #FFF;
+  }
+
+  &:hover, &:active{
+    border-color: $color;
+  }
+
+  &:focus{
+    border-color: $color;
+    outline: none;
+    color: $headings;
+  }
+
+  &[aria-invalid="true"]{
+    border-color: $error;
+    background: rgba(238,0,0,.1);
+  }
+
+  .dark &:active, .dark &:hover, .dark &:focus{
+    border-color: $bg;
+  }
+
+  .dark &:active, .dark &:focus{ 
+    box-shadow: 3px 5px 10px rgba(255,255,255,0.4)
+  }
+}
+
+
+textarea.form-control, textarea{
+  min-height: rems(237px);
+  height: rems(237px);
+  resize: vertical;
+  width: 100%;
+}
+
+fieldset{
+  margin-bottom: rems(20px);
+}
+
+input[type="number"]{ 
+  -moz-appearance: textfield;
+}
+
+label{
+  font-size: $font-size-small;
+
+}
+
+div.wpcf7 .ajax-loader, .ajax-loader{  
+  position: absolute;
+  top: 50%;
+  left: rems(14px);
+  width: rems(22px);
+  height: rems(22px);
+  margin: rems(-13px) 0 0 0;
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+  background: url("../img/logo-s.svg") no-repeat 50% 50%;
+  background-size: contain;
+  filter: brightness(0) invert(1);
+}
+
+div.wpcf7 .btn{
+  &:hover, &:active{
+    &+span.ajax-loader{
+      border-top-color: $bg;
+      border-bottom-color: $bg;
+    }
+  }
+}
+
+span.wpcf7-not-valid-tip{
+  color: $error;
+  font-size: rems(12px);
+  margin: rems(8px) 0 0;
+  line-height: 1.5;
+}
+
+
+.submit-wrap{
+  position: relative;
+}
+
+.submit-btn{
+  width: 100%;
+  display: block;
+  padding-top: rems(22px);
+  padding-bottom: rems(22px);
+  font-size: rems(14px);
+  margin-top: rems(21px);
+}
+
+.capt{
+  font-size: rems(12px);
+  color: #a1a1a1;
+  text-align: center;
+  margin-top: rems(20px);
+  margin-bottom: rems(-35px);
+}
+
+@media screen and ( max-width: $breakpoints-md ){
+  .form-control, 
+  .input-text,
+  .jq-checkbox, 
+  .jq-radio,
+  .jq-file{
+    font-size: 16px;
+  }
+
+}

@@ -1,0 +1,21 @@
+.icon{
+  background: url("../img/icons/sprite.png") no-repeat 1000px 1000px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.01), 
+screen and (-moz-device-pixel-ratio: 1.01) {
+  .icon{
+    background-image: url("../img/icons/sprite@x2.png");
+    background-size: 400px auto;  
+  }
+} 
+
+@media screen and (-webkit-min-device-pixel-ratio: 2.01), 
+screen and (-moz-device-pixel-ratio: 2.01) {
+  .icon{
+    background-image: url("../img/icons/sprite@x4.png");
+    background-size: 400px auto;  
+  }
+} 

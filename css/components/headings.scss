@@ -1,0 +1,119 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: $headings-font;
+  font-weight: bold;
+  line-height: normal;
+  margin-top: 52px;
+
+  &:first-child{
+    margin-top: 0;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+h1, .h1{
+  font-size: 30px;
+  margin-bottom: 29px;
+  font-weight: bold;
+}
+ 
+h2, .h2{
+  font-size: 30px;
+  margin-bottom: 19px;
+  font-weight: 700;
+  color: $color3;
+
+  strong{
+    border-bottom: 7px solid #3A4658;
+    color: inherit;
+    font-weight: inherit;
+  }
+}
+ 
+h3, .h3{
+  font-size: 28px;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+ 
+h4, .h4{
+  font-size: 20px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+ 
+h5, .h5{
+  font-size: 17px;
+  margin-bottom: 17px;
+  font-weight: 600;
+  line-height: 1.55em;
+  margin-top: 17px;
+}
+
+h6, .h6{
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+@media screen and ( max-width: $breakpoints-xl ){
+		
+}
+
+@media screen and ( max-width: $breakpoints-lg ){
+
+
+  h1, .h1{
+  }
+   
+  h2, .h2{
+  }
+   
+  h3, .h3{
+  }
+   
+  h4, .h4{
+  }
+   
+  h5, .h5{
+  }
+
+  h6, .h6{
+  }
+	
+}
+
+@media screen and ( max-width: $breakpoints-md ){
+	
+}
+
+@media screen and ( max-width: $breakpoints-sm ){
+	
+  
+  h1, .h1{
+    font-size: 22px;
+  }
+   
+  h2, .h2{
+  }
+   
+  h3, .h3{
+  }
+   
+  h4, .h4{
+  }
+   
+  h5, .h5{
+  }
+
+  h6, .h6{
+  }
+}
+
+@media screen and ( max-width: $breakpoints-xs ){
+	
+}

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNextRoundedStd-Med.eot');
+    src: local('☺'),
+         url('../fonts/AvenirNextRoundedStd-Med.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextRoundedStd-Med.woff2') format('woff2'),
+         url('../fonts/AvenirNextRoundedStd-Med.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNextRoundedStd-Demi.eot');
+    src: local('☺'),
+         url('../fonts/AvenirNextRoundedStd-Demi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextRoundedStd-Demi.woff2') format('woff2'),
+         url('../fonts/AvenirNextRoundedStd-Demi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNextRoundedStd-Bold.eot');
+    src: local('☺'),
+         url('../fonts/AvenirNextRoundedStd-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextRoundedStd-Bold.woff2') format('woff2'),
+         url('../fonts/AvenirNextRoundedStd-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirNextRoundedStd-Reg.eot');
+    src: local('☺'),
+        url('../fonts/AvenirNextRoundedStd-Reg.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNextRoundedStd-Reg.woff2') format('woff2'),
+        url('../fonts/AvenirNextRoundedStd-Reg.woff') format('woff'),
+        url('../fonts/AvenirNextRoundedStd-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+ 

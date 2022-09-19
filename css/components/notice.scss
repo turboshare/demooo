@@ -1,0 +1,186 @@
+.notice{
+  display: block;
+  position: relative;
+  margin: 12px 0 0;
+  background: $bg;
+  border-radius: 5px;
+  width: 331px;
+  max-width: 100%;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+  padding: 8px;
+  border-radius: 20px;
+
+
+  &-wrap{
+    position: fixed;
+    z-index: 99999;
+    left: 20px;
+    bottom: 20px;
+    max-width: calc( 100% - 40px ) ;
+  }
+
+  &-close{
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    opacity: 0.47;
+    transition: opacity 0.24s;
+    cursor: pointer;
+
+    &:before, &:after{
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 1px;
+      margin: -1px -4px;
+      background: #FFF;
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);      
+    }
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  &-title{
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  &-content{
+    border: 1px dashed #111927;
+    border-radius: 18px;
+    padding: 15px 20px 19px 15px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #FFF;
+
+    &.with-icon{ 
+      padding: 8px 20px 7px 82px;
+    }
+  }
+
+  &-icon{
+    position: absolute;
+    top: 50%;
+    left: 46px;
+    width: 28px;
+    height: 28px;
+    margin: -22px -14px;
+
+    .svgicon{
+      width: 100%;
+    }
+
+    .svgicon-coin-plus{
+      color: #29865E;
+    }
+
+    .svgicon-coin-minus{
+      color: #EE4444;
+    }
+  }
+
+  .val{
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &.success{
+    color: $bg;
+    background: #61AC80;
+
+    .notice-close{
+      &:before, &:after{
+        background-color: #FFF;
+      }
+    }
+
+    .notice-content{
+      border: none;
+    }
+  }
+
+  &.error{
+    color: $bg;
+    background: #bf4d4d;
+
+    .notice-close{
+      &:before, &:after{
+        background-color: #FFF;
+      }
+    }
+
+    .notice-content{
+      border: none;
+    }
+  }
+}
+
+
+
+@media screen and ( max-width: $breakpoints-xl ){
+
+} 
+
+@media screen and ( max-width: $breakpoints-lg ){
+}
+
+@media screen and ( max-width: $breakpoints-md ){
+}
+
+@media screen and ( max-width: $breakpoints-sm ){
+
+  .notice{
+    border-radius: 7px;
+    margin-top: 5px;
+
+    &-wrap{
+      bottom: 5px;
+      left: 5px;
+      max-width: calc( 100% - 10px);
+    }
+
+    &-content{
+      padding: 1px 24px 1px 5px;
+      font-size: 12px;
+      line-height: normal;
+      border-radius: 5px;
+      border: none;
+
+      &.with-icon{
+        padding-left: 43px;
+      }
+    }
+
+    &-icon{
+      left: 25px;
+    }
+
+    &-close{
+      top: 5px;
+      right: 5px;      
+    }
+
+    .val{
+      margin-bottom: 4px;
+      font-size: 16px;      
+    }
+  }
+}
+
+@media screen and ( max-width: $breakpoints-xs ){
+}

@@ -1,0 +1,110 @@
+
+
+
+.wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1150px;
+  padding: 0 25px;
+  position: relative;
+}
+
+.container{
+  max-width: 1470px;
+  padding: 0 25px;
+
+  &.short{
+    max-width: 864px;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.dashed{
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+}
+
+.nobord{
+  border-bottom: none;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.svgicon{ 
+  svg{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+}
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.dark{
+
+  background: $color;
+  color: $bg;
+
+  a, .more-link{
+    color: inherit;
+  }
+
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6{
+    color: $bg;
+  }
+}
+
+
+@media screen and ( max-width: $breakpoints-xl ){
+  .wrapper{
+  }		
+}
+
+@media screen and ( max-width: $breakpoints-lg ){
+}
+
+@media screen and ( max-width: $breakpoints-md ){
+  .wrapper{
+  }
+  
+  .page-wrap{
+  }
+
+}
+@media screen and ( max-width: $breakpoints-sm ){
+}
+
+@media screen and ( max-width: $breakpoints-xs ){
+  .wrapper{
+    padding-left: 14px;
+    padding-right: 14px;
+  }	
+}
